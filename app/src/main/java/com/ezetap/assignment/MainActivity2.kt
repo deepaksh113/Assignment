@@ -1,14 +1,12 @@
 package com.ezetap.assignment
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.ezetap.assignment.databinding.ActivityMain2Binding
-import com.ezetap.network.UIModel
 import com.squareup.picasso.Picasso
 
 class MainActivity2 : AppCompatActivity() {
@@ -62,6 +60,12 @@ class MainActivity2 : AppCompatActivity() {
                             layoutParams = params
                         }
                         binding.linearLayout.addView(button)
+                        button.setOnClickListener {
+                            Toast.makeText(this, "Thanks for submitting the form.", Toast.LENGTH_SHORT).show()
+                            Handler(Looper.getMainLooper()).postDelayed({
+                                onBackPressed()
+                            }, 2000L)
+                        }
                     }
                 }
             }

@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.ezetap.assignment.databinding.ActivityMainBinding
-import com.ezetap.network.UIModel
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

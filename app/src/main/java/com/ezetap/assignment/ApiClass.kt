@@ -2,7 +2,6 @@ package com.ezetap.assignment
 
 import android.view.View
 import com.ezetap.network.Api
-import com.ezetap.network.UIModel
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import okhttp3.OkHttpClient
